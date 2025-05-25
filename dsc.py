@@ -8,7 +8,7 @@ from tabulate import tabulate
 import warnings
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 print(df.shape)
 # Display the first few rows of the DataFrame as a table
 print(tabulate(df.head( ) , headers='keys' , tablefmt= 'pretty' ) )
@@ -98,7 +98,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/content/student-mat.csv", delimiter=';')
+df=pd.read_csv("student-mat.csv", delimiter=';')
 
 studytime_mapping = {
     1: '<2 hours',
@@ -124,7 +124,7 @@ import plotly.express as px
 from tabulate import tabulate
 
 # Load dataset
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Mapping dictionary for failures values
 failures_mapping = {
@@ -150,7 +150,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/content/student-mat.csv", delimiter=';')
+df=pd.read_csv("student-mat.csv", delimiter=';')
 
 #Mapping dictionary for studytime values
 studytime_mapping ={
@@ -185,7 +185,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/content/student-mat.csv", delimiter=';')
+df=pd.read_csv("student-mat.csv", delimiter=';')
 
 #Mapping dictionary for reason value
 reason_mapping = {
@@ -210,7 +210,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Mapping dictionary for reason values
 reason_mapping = {
@@ -239,7 +239,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/content/student-mat.csv", delimiter=';')
+df=pd.read_csv("student-mat.csv", delimiter=';')
 
 #Selecting specific attributes for the pairplot
 selected_attributes = ['studytime', 'traveltime', 'failures', 'age', 'sex']
@@ -254,7 +254,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Selecting specific attributes for the pairplot
 selected_attributes = ['G1', 'G2','G3', 'sex']
@@ -286,7 +286,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
 # Load dataset
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Select attributes for clustering
 selected_attributes = ['G1', 'G2', 'G3']
@@ -316,7 +316,7 @@ import seaborn as sns
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster
 
 # Load your data
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Select specific attributes for clustering
 selected_attributes = ['G1', 'G2', 'G3']
@@ -505,7 +505,7 @@ from sklearn.metrics import accuracy_score, recall_score
 import sklearn.metrics
 
 # Load the dataset
-df = pd.read_csv("/content/student-mat.csv", delimiter=';')
+df = pd.read_csv("student-mat.csv", delimiter=';')
 
 # Convert categorical variables to numerical
 df['sex'] = df['sex'].map({'M': 0, 'F': 1})
